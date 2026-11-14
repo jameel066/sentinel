@@ -36,6 +36,11 @@ before the code was published.
 - `SECURITY.md` with threat model, controls and known limitations.
 - `tests/test_security.py` covering hashing, policy and secret storage.
 - GitHub Actions workflow running the tests on Windows.
+- `docs/PROJECT-REPORT.md` — full project report (architecture, workflow,
+  security design, UI walkthrough, the security review above, testing,
+  limitations, future work) plus the print-ready
+  `docs/SENTINEL-Project-Report.pdf`.
+- 16 UI screenshots in `docs/screenshots/`, wired into the README.
 
 ## 4.0
 

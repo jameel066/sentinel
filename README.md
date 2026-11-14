@@ -49,19 +49,27 @@ Attempt n     ──▶  capped at 30 minutes
 
 ---
 
-<!--
 ## Screenshots
 
-Drop images into docs/screenshots/ and uncomment:
+| Dashboard | Lockout (1st cycle) |
+| --- | --- |
+| ![Dashboard](docs/screenshots/12-dashboard.png) | ![Lockout](docs/screenshots/09-lockout-1.png) |
 
-| Installer | Dashboard |
-|---|---|
-| ![Installer](docs/screenshots/installer.png) | ![Dashboard](docs/screenshots/dashboard.png) |
+| Login gate | Final attempt warning |
+| --- | --- |
+| ![Login](docs/screenshots/07-login.png) | ![Final warning](docs/screenshots/08-login-final-warning.png) |
 
-| Lockout | Captures |
-|---|---|
-| ![Lockout](docs/screenshots/lockout.png) | ![Captures](docs/screenshots/captures.png) |
--->
+| Setup wizard | Intruder captures |
+| --- | --- |
+| ![Installer](docs/screenshots/02-installer-welcome.png) | ![Captures](docs/screenshots/13-captures.png) |
+
+| Activity log | Alert delivered by email |
+| --- | --- |
+| ![Activity log](docs/screenshots/14-activity-log.png) | ![Email alert](docs/screenshots/16-email-alert.png) |
+
+All 16 screens (splash, four wizard steps, login, lockouts, dashboard sections,
+settings, email alert) are in [`docs/screenshots/`](docs/screenshots). Captured on
+the 4.0 build; the interface is unchanged in 4.1.0.
 
 ---
 
@@ -165,13 +173,29 @@ SENTINEL is a **deterrent and an audit trail**, not a security boundary.
 
 ---
 
+## Documentation
+
+| Document | Contents |
+| --- | --- |
+| [`docs/PROJECT-REPORT.md`](docs/PROJECT-REPORT.md) | Full project report — architecture, workflow, security design, UI walkthrough, security review and remediation, testing, limitations |
+| [`docs/SENTINEL-Project-Report.pdf`](docs/SENTINEL-Project-Report.pdf) | The same report as a print-ready PDF |
+| [`SECURITY.md`](SECURITY.md) | Threat model, controls, disclosure process |
+| [`CHANGELOG.md`](CHANGELOG.md) | What changed in 4.1.0 and why |
+
+---
+
 ## Project layout
 
 ```
-sentinel.py          single-file application (UI, auth, capture, alerts)
-requirements.txt     one optional dependency
-SECURITY.md          threat model, controls, responsible disclosure
-docs/screenshots/    UI captures used in this README
+sentinel.py                  single-file application (UI, auth, capture, alerts)
+requirements.txt             one optional dependency
+SECURITY.md                  threat model, controls, responsible disclosure
+CHANGELOG.md                 version history
+docs/PROJECT-REPORT.md       full project report
+docs/SENTINEL-Project-Report.pdf
+docs/screenshots/            UI captures (16 screens)
+tests/test_security.py       13 security unit tests
+.github/workflows/tests.yml  CI: Windows, Python 3.9 and 3.12
 ```
 
 ---
