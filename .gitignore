@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+develop-eggs/
+.eggs/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# PyInstaller / packaging
+*.spec
+*.exe
+*.msi
+
+# Tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.idea/
+
+# Secrets and local state (never commit these)
+.env
+.env.*
+config.json
+statistics.json
+security.log
+captures/
+*.jpg
+*.png
+!docs/screenshots/*.png
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store

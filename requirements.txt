@@ -1,0 +1,10 @@
+# SENTINEL runtime dependencies
+#
+# Optional. Without opencv-python the application still runs; only the
+# intruder photo capture is disabled. Tkinter ships with CPython for Windows,
+# so it is intentionally not listed here.
+#
+# Install with:
+#     pip install -r requirements.txt
+
+opencv-python>=4.8.0
